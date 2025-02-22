@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content-logo">
+            <h1>Coders.</h1>
+        </div>
+        <div class="login">
+            <button><a href="./login.html">Login</a></button>
+            <button><a href="./signUP.html">SignUp</a</button>
+        </div>
+    </nav>
+
+    <section class="sidebar">
+        <div class="sidemenu">
+            <img src="./reload.png" alt="" onclick="RandomQuestion()">
+            <a href="./index.html"><img src="./home.png" alt=""></a>
+            <a href="#tst"><img src="./test.png" alt=""></a>
+            <a href="#iq"><img src="./iq.png" alt=""></a>
+            <!-- <img src="./suggestion.png" alt=""> -->
+        </div>
+    </section>
+
+    <section id = "rules">
+        <h1>WellCome, To Train Your Brain.</h1>
+        <div class="mainrules">
+            <h3>Main Rules.</h3>
+            <p>All the Question's Compulsory.
+            </p>
+            <p>Each Question Contain's 10 Marks</p>
+            <p>Use of Ai is Restricted.</p>
+            <p>"Don't stress, forget the rest, do your best."</p>
+        </div>
+    </section>
+
+    <section class="test" id = "tst">
+        <div class="container">
+            <h1>Train Your Brain.</h1>
+            <form id="quizForm">
+            </form>
+            <!-- <div id="out"></div> -->
+        </div>
+    </section>
+    <section class="lower-test">
+        <div>
+            <div id="test-result">
+                <h2 id = testid>0 out of 10 correct.</h2>
+            </div>
+        </div>
+    </section>
+    
+    <section class="lower-test" id = "iq">
+        <div class = "lower-test-btn">
+            <button><a href="./indexmaster.html">Know Your IQ</a></button>
+        </div>
+    </section>
+
+    <script src="./test.js"></script>
+</body>
+
+</html>

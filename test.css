@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+
+.navbar .login button {
+    margin: 0px 10px;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.login button a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.navbar .login button a:hover {
+    color: #3232ff;
+}
+
+.navbar.sticky {
+    background-color: rgb(23, 23, 23);
+    padding: 25px 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    min-height: 100vh;
+    width: 50px;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.sidebar .sidemenu {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar .sidemenu img {
+    margin-top: 50px;
+    margin-left: 0;
+    height: 30px;
+    width: 30px;
+    background: black;
+    border-radius: 5px;
+}
+
+/* Test Section Rules */
+#rules {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10rem 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000000;
+}
+
+#rules h1 {
+    margin: 0 50px 0 70px;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.mainrules {
+    margin: 0 40px 0 70px;
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.mainrules h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mainrules p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #rules {
+        padding: 10rem 2rem 0 2rem;
+    }
+
+    #rules h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .mainrules {
+        padding: 1.5rem;
+        margin-left: 90px;
+    }
+
+    .mainrules h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .mainrules p {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #rules {
+        padding: 10rem 2rem 0 2rem;
+    }
+
+    #rules h1 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .mainrules {
+        padding: 1rem;
+    }
+
+    .mainrules h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .mainrules p {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+/* Main Test Section */
+.test {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px 10px 0px 60px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    padding: 10px 0 30px 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
+}
+
+/* Test Result Section */
+.lower-test {
+    max-width: 100%;
+    min-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-test div button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.lower-test .lower-test-btn button{
+    margin: 0 10px 0 60px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#test-result {
+    margin: 0 20px 0 70px;
+    min-height: 5rem;
+    width: 15rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.526);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#test-result h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+}
+
+/* Media Queries for Test Section */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 426px) {
+    .container h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container h1 {
+        font-size: 22px;
+    }
+}
